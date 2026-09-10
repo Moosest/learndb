@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 8000:80
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
